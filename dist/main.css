@@ -11,6 +11,7 @@ body {
 body {
   background-color: #0F172A;
   color: #fff;
+  padding-top: 6rem;
 }
 
 ul {
@@ -41,10 +42,16 @@ button:hover {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 5rem;
+  padding: 0.8rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 4rem;
+  backdrop-filter: blur(30px);
 }
 .header__logo {
   width: 3.2rem;

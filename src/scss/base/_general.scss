@@ -3,6 +3,7 @@
 body{
     background-color: $bg-color;
     color: #fff;
+    padding-top: calc($header-height + 1rem);
 }
 
 ul{
