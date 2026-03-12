@@ -1,14 +1,33 @@
 @use '../utils/variables' as * ;
+
 body{
     background-color: $bg-color;
     color: #fff;
 }
+
 ul{
     list-style: none;
 }
+
 a{
     text-decoration: none;
 }   
+
 img{
     max-width: 100%;
+}
+
+button{
+    font-size: 1rem;
+    padding: 0.8rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 18px;
+    transition: all 0.18s ease-in-out;
+}
+
+button:hover{
+    color: #fff;
+    background-color: $primary-color;
+    cursor: pointer;
 }
