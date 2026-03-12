@@ -102,8 +102,11 @@ button:hover {
   align-items: center;
   gap: 0.5rem;
 }
-.intro-banner__button {
+.intro-banner__link {
   width: 50%;
+}
+.intro-banner__button {
+  width: 100%;
 }
 
 .projects {
@@ -118,8 +121,11 @@ button:hover {
   justify-content: space-around;
   align-items: center;
 }
-.projects__button {
+.projects__link {
   width: 20%;
+}
+.projects__button {
+  width: 100%;
 }
 
 .card {
