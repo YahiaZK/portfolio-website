@@ -12,8 +12,16 @@
     align-items: center;
     backdrop-filter: blur(30px);
 
+    animation: shrink linear forwards;
+    animation-timeline: scroll();
+
     &__logo{
         width: 3.2rem;  
         border-radius: 100%;
     }
+}
+
+@keyframes shrink {
+    0% {height: $header-height;}
+    100% {height: calc($header-height - 1rem);}
 }
