@@ -14,5 +14,16 @@
         background-color: #fff;
         color: $bg-color;
     }
-}
 
+    &__description{
+        text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+        width: 30%;
+    }
+    @media (max-width: 768px) {
+        width: 70%;
+        
+    }
+}
