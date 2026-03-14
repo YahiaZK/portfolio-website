@@ -18,4 +18,21 @@
     &__link:hover{
         color: $primary-color;
     }
+
+    @media (max-width: 768px) {
+        display: none;
+        position: fixed;
+        top: $header-height; 
+        left: 0;
+        right: 0;
+        background: $bg-color;
+
+        &__list{
+            flex-direction: column; 
+        }
+
+        &.open {
+            display: block; 
+        }
+    }
 }

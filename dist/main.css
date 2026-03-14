@@ -82,6 +82,31 @@ button:hover {
 .navbar__link:hover {
   color: #5EEAD4;
 }
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    background: #0F172A;
+  }
+  .navbar__list {
+    flex-direction: column;
+  }
+  .navbar.open {
+    display: block;
+  }
+}
+
+button.navbar-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  button.navbar-menu {
+    display: block;
+  }
+}
 
 .main {
   margin-top: 1rem;
@@ -172,7 +197,7 @@ button:hover {
 .projects__grid {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
 }
 @media (max-width: 768px) {
   .projects__grid {
@@ -192,6 +217,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-content: space-between;
   gap: 0.5rem;
   border-radius: 16px;
   padding: 1rem;
@@ -201,6 +227,9 @@ button:hover {
   cursor: pointer;
   background-color: #fff;
   color: #0F172A;
+}
+.card__img {
+  width: 120px;
 }
 .card__description {
   text-align: center;
